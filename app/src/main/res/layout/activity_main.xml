@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:layout_centerVertical="false"
+    android:background="#302645"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:hint="Video or Playlist">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto2"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:text="Video"
+            android:textColor="#FBFBFB"
+            android:textColorHint="#FAFAFA" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/id"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="80dp"
+            android:text="YoutubeDownloader"
+            android:textColor="#B69FE1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center|center_horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Download"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:ems="10"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:hint="File Name (optional)"
+                android:inputType="textPersonName"
+                android:minHeight="50dp"
+                android:textColorHint="#C5BDBD"
+                android:visibility="visible"
+                app:endIconMode="none">
+
+                <AutoCompleteTextView
+                    android:id="@+id/nameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:minHeight="50dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#F6F0F0"
+                    android:textColorHint="#ECECEC"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Download"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/menu"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="#FF9800"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:onClick="download"
+                android:text="Download" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/menu"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/url"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:hint="Format"
+                android:outlineProvider="background">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:text="MP3"
+                    android:textColor="#EAEAEA" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/url"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:ems="10"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:hint="Add URL:"
+                android:inputType="textPersonName"
+                android:minHeight="50dp"
+                android:textColorHint="#C5BDBD"
+                app:endIconMode="none">
+
+                <AutoCompleteTextView
+                    android:id="@+id/UrlText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:minHeight="50dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#F6F0F0"
+                    android:textColorHint="#ECECEC"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

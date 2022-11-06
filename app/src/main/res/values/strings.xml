@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">YoutubeDownloader</string>
+    <string-array name="formats">
+        <item>MP3</item>
+        <item>MP4-High Res(Recommended)</item>
+        <item>MP4-Low Res(Low Consump)  </item>
+
+    </string-array>
+    <string-array name="type">
+        <item>Video</item>
+        <item>PlayList - Mp3 only (Security)</item>
+    </string-array>
+</resources>
