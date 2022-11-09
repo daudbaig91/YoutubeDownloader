@@ -110,6 +110,11 @@ class MainActivity : AppCompatActivity() {
 
 
     fun hasId(url:String,param:String):Boolean{
+        if(param.equals("v")){
+            if(url.contains("youtu")){
+                return true
+            }
+        }
         val uri = Uri.parse(url)
         val listUrl: String? = uri.getQueryParameter(param)
         if(listUrl!=null){
