@@ -1,9 +1,8 @@
 # YoutubeDownloader
 
-This is a Android Youtube Downloader which allows to download videos in mp3 and mp4 high and low resolution.
-It also allows to downlod Playlist but only in mp3.
-Backend has been developed in azure
-Hope you enjoy the app :)
+Used azure functions to create a python function that returns a YouTube video in the chosen formats (mp3, mp4 high or mp4 low resolution) using Pytube. This simple function used with the powerful Pytube API makes downloading YouTube videos up to 60% faster than the top searched sites. Made an app for android, this app also has the functionality to download all videos from playlists asynchronously. Used YouTube API to pull videos id’s and the DownlaodManager service to request and download the videos.
+
+Hope you likef my mini projet; //:)
 
 
 ###### App Look:
