@@ -2,7 +2,7 @@
 
 Used azure functions to create a python function that returns a YouTube video in the chosen formats (mp3, mp4 high or mp4 low resolution) using Pytube. This simple function used with the powerful Pytube API makes downloading YouTube videos up to 60% faster than the top searched sites. Made an app for android, this app also has the functionality to download all videos from playlists asynchronously. Used YouTube API to pull videos id’s and the DownlaodManager service to request and download the videos.
 
-Hope you liked my mini nut useful projet; //:)
+Hope you liked my mini but useful projet; //:)
 
 
 ###### App Look:
